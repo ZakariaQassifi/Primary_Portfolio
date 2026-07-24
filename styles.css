@@ -3,8 +3,8 @@
       --bg-color: #080b10;
       --card-bg: rgba(18, 24, 36, 0.65);
       --card-border: rgba(255, 255, 255, 0.08);
-      --accent-color: #2424c9;  
-      --accent-hover: #2020d8;
+      --accent-color: #0d54b5;  
+      --accent-hover: #0d54b5;
       --text-main: #F1F5F9;
       --text-muted: #94A3B8;
       --font-mono: 'JetBrains Mono', monospace;
@@ -50,7 +50,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 1.25rem 4rem;
-      background: rgba(8, 11, 16, 0.85);
+     background: rgba(2, 16, 39, 0.795);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--card-border);
       z-index: 1000;
