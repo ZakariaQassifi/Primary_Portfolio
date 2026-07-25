@@ -57,17 +57,26 @@
     }
 
     .logo {
-      font-family: var(--font-mono);
-      font-weight: 700;
-      font-size: 1.2rem;
-      letter-spacing: 2px;
-      color: var(--text-main);
-      text-decoration: none;
-    }
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
 
-    .logo span {
-      color: var(--accent-color);
-    }
+.logo-img {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.logo-text .highlight {
+  color: #3b82f6;
+}
 
     nav {
       display: flex;
