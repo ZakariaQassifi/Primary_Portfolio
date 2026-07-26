@@ -1,6 +1,6 @@
 /* --- ROOT VARIABLES & RESET --- */
 :root {
-  --bg-color: #040d1f;
+  --bg-color: #01040c;
   --card-bg: #12151e;
   --card-border: #1e2330;
   --accent-color: #00f28b; 
@@ -55,7 +55,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem 4rem;
-  background: rgba(1, 14, 37, 0.85); 
+  background: rgba(0, 10, 26, 0.85); 
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--card-border);
   z-index: 1000;
