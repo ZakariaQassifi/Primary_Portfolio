@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/svg+xml" href="ZQlogo.svg">
 </head>
 <body>
@@ -36,22 +36,20 @@
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
     </nav>
 
     <div class="header-btns">
-      <!-- GITHUB BUTTON -->
       <a href="https://github.com/ZakariaQassifi" target="_blank" class="btn-nav-outline">
         <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
         GitHub
       </a>
 
-      <!-- LINKEDIN BUTTON -->
       <a href="https://www.linkedin.com/in/zakaria-qassifi-87874b286/" target="_blank" class="btn-nav-outline">
         <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
         LinkedIn
       </a>
 
-      <!-- SHOW CV BUTTON -->
       <button class="btn-nav-accent" onclick="openCVModal()">
         <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 16l2.5-2.5-1.42-1.41L11 14.17V4h-2v10.17l-2.08-2.08L5.5 13.5 10 18l2 2 2-2zm9-4h-2v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7z"/></svg>
         View CV
@@ -61,29 +59,27 @@
 
   <!-- HERO SECTION -->
   <section class="hero fade-in">
-    <div class="section-title">// Computer Engineering & Artificial Intelligence</div>
+    <div class="terminal-cmd-prompt">
+      <span class="cmd-comment">// section::intro</span><br>
+      <span class="cmd-symbol">&gt;</span> <span class="cmd-keyword">whoami</span>
+    </div>
     <h1>Building Intelligent Systems & Software Solutions.</h1>
     <p>
       Hi, I'm <strong>Zakaria Qassifi</strong>. Passionate about software engineering, 
       object-oriented architecture, and AI algorithms to build practical technology solutions.
     </p>
 
-    <!-- HERO ACTION BUTTONS WITH GOOGLE DRIVE CV, GITHUB & LINKEDIN -->
     <div class="hero-actions">
-
-      <!-- 2. DOWNLOAD CV DIRECTLY FROM GOOGLE DRIVE -->
       <a href="https://drive.google.com/file/d/1d2JrkwEzrgoBTX2S1y0DBKIte9YKmWaO/view?usp=drive_link" class="btn-hero-secondary" target="_blank">
         <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
         Download CV (Drive)
       </a>
 
-      <!-- 3. GITHUB LINK -->
       <a href="https://github.com/ZakariaQassifi" target="_blank" class="btn-hero-secondary">
         <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
         GitHub Profile
       </a>
 
-      <!-- 4. LINKEDIN LINK -->
       <a href="https://www.linkedin.com/in/zakaria-qassifi-87874b286/" target="_blank" class="btn-hero-secondary">
         <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
         LinkedIn Profile
@@ -93,103 +89,190 @@
 
   <!-- ABOUT & EDUCATION SECTION -->
   <section id="about" class="fade-in">
-    <div class="section-title">01 / Education & Background</div>
+    <div class="terminal-cmd-prompt">
+      <span class="cmd-comment">// section::about</span><br>
+      <span class="cmd-symbol">&gt;</span> <span class="cmd-keyword">cat</span> <span class="cmd-file">education.md</span>
+    </div>
     <h2>Academic Profile</h2>
     
     <div class="grid-2">
-      <div class="card">
-        <h3>Licence en Génie Informatique et Intelligence Artificielle</h3>
-        <div class="subtitle">Faculté Polydisciplinaire de Khouribga | 2023 – Present</div>
-        <p>Focused on advanced computer science engineering principles, artificial intelligence systems, database architecture, and object-oriented programming.</p>
+      <div class="card terminal-card">
+        <div class="terminal-header">
+          <div class="window-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="window-title">degree.licence.md</span>
+        </div>
+        <div class="terminal-body">
+          <h3>Licence en Génie Informatique et Intelligence Artificielle</h3>
+          <div class="subtitle">Faculté Polydisciplinaire de Khouribga | 2023 – Present</div>
+          <p>Focused on advanced computer science engineering principles, artificial intelligence systems, database architecture, and object-oriented programming.</p>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>Baccalauréat Sciences Physiques</h3>
-        <div class="subtitle">Graduated 2022 – 2023</div>
-        <p>Strong foundation in analytical mathematics, physical sciences, logical reasoning, and problem-solving methodologies.</p>
+      <div class="card terminal-card">
+        <div class="terminal-header">
+          <div class="window-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="window-title">bac.physics.md</span>
+        </div>
+        <div class="terminal-body">
+          <h3>Baccalauréat Sciences Physiques</h3>
+          <div class="subtitle">Graduated 2022 – 2023</div>
+          <p>Strong foundation in analytical mathematics, physical sciences, logical reasoning, and problem-solving methodologies.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- EXPERIENCE & LEADERSHIP -->
   <section id="experience" class="fade-in">
-    <div class="section-title">02 / Leadership & Experience</div>
+    <div class="terminal-cmd-prompt">
+      <span class="cmd-comment">// section::experience</span><br>
+      <span class="cmd-symbol">&gt;</span> <span class="cmd-keyword">cat</span> <span class="cmd-file">roles.log</span>
+    </div>
     <h2>Activities & Roles</h2>
 
     <div class="grid-2">
-      <div class="card">
-        <h3>Vice-Président</h3>
-        <div class="subtitle">Al Khawarizmi IT & Robotics Club</div>
-        <ul>
-          <li>Organized key technology and robotics workshops and academic events.</li>
-          <li>Managed strategic communication channels and organizational partnerships.</li>
-          <li>Co-coordinated hackathons and student tech events.</li>
-        </ul>
+      <div class="card terminal-card">
+        <div class="terminal-header">
+          <div class="window-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="window-title">alkhawarizmi.club</span>
+        </div>
+        <div class="terminal-body">
+          <h3>Vice-Président</h3>
+          <div class="subtitle">Al Khawarizmi IT & Robotics Club</div>
+          <ul>
+            <li>Organized key technology and robotics workshops and academic events.</li>
+            <li>Managed strategic communication channels and organizational partnerships.</li>
+            <li>Co-coordinated hackathons and student tech events.</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>Hackathon Vibe Coding 2026</h3>
-        <div class="subtitle">Organizer & Event Facilitator</div>
-        <ul>
-          <li>Participated actively in the organization and public communication strategy.</li>
-          <li>Contributed to securing event sponsorships and academic partnerships.</li>
-        </ul>
+      <div class="card terminal-card">
+        <div class="terminal-header">
+          <div class="window-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="window-title">hackathon_2026.log</span>
+        </div>
+        <div class="terminal-body">
+          <h3>Hackathon Vibe Coding 2026</h3>
+          <div class="subtitle">Organizer & Event Facilitator</div>
+          <ul>
+            <li>Participated actively in the organization and public communication strategy.</li>
+            <li>Contributed to securing event sponsorships and academic partnerships.</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
   <section id="projects" class="fade-in">
-    <div class="section-title">03 / Featured Projects</div>
+    <div class="terminal-cmd-prompt">
+      <span class="cmd-comment">// section::projects</span><br>
+      <span class="cmd-symbol">&gt;</span> <span class="cmd-keyword">ls -l</span> <span class="cmd-file">./projects/</span>
+    </div>
     <h2>Engineering Works</h2>
 
     <div class="grid-3">
-      <div class="card">
-        <h3>Hotel Management App</h3>
-        <div class="subtitle">Python</div>
-        <p>Software application designed to streamline hotel operations, handle room availability, guest bookings, and customer databases.</p>
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">Database</span>
-          <span class="tag">Software Dev</span>
+      <div class="card terminal-card">
+        <div class="terminal-header">
+          <div class="window-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="window-title">hotel_app.py</span>
+        </div>
+        <div class="terminal-body">
+          <h3>Hotel Management App</h3>
+          <div class="subtitle">Python</div>
+          <p>Software application designed to streamline hotel operations, handle room availability, guest bookings, and customer databases.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Database</span>
+            <span class="tag">Software Dev</span>
+          </div>
         </div>
       </div>
 
-      <div class="card">
-        <h3>Smart Planning Assistant APP</h3>
-        <div class="subtitle">C++ / Algorithms</div>
-        <p>An intelligent scheduling assistant prioritizing tasks and optimizing personal workflow using custom algorithm structures and OOP principles.</p>
-        <div class="tags">
-          <span class="tag">C++</span>
-          <span class="tag">OOP</span>
-          <span class="tag">Algorithms</span>
-          <span class="tag">Qt</span>
+      <div class="card terminal-card">
+        <div class="terminal-header">
+          <div class="window-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="window-title">smart_scheduler.cpp</span>
+        </div>
+        <div class="terminal-body">
+          <h3>Smart Planning Assistant APP</h3>
+          <div class="subtitle">C++ / Algorithms</div>
+          <p>An intelligent scheduling assistant prioritizing tasks and optimizing personal workflow using custom algorithm structures and OOP principles.</p>
+          <div class="tags">
+            <span class="tag">C++</span>
+            <span class="tag">OOP</span>
+            <span class="tag">Algorithms</span>
+            <span class="tag">Qt</span>
+          </div>
         </div>
       </div>
 
-      <div class="card">
-        <h3>Personal Portfolio Web App</h3>
-        <div class="subtitle">HTML / CSS / JS</div>
-        <p>Interactive minimalist web portfolio built to present academic projects, research reports, and engineering software works.</p>
-        <div class="tags">
-          <span class="tag">JavaScript</span>
-          <span class="tag">HTML/CSS</span>
-          <span class="tag">UI/UX</span>
+      <div class="card terminal-card">
+        <div class="terminal-header">
+          <div class="window-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="window-title">portfolio_site.html</span>
+        </div>
+        <div class="terminal-body">
+          <h3>Personal Portfolio Web App</h3>
+          <div class="subtitle">HTML / CSS / JS</div>
+          <p>Interactive minimalist web portfolio built to present academic projects, research reports, and engineering software works.</p>
+          <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">UI/UX</span>
+          </div>
         </div>
       </div>
 
-      <div class="card">
-        <h3>My To-Do List web app</h3>
-        <div class="subtitle">HTML / CSS / JS</div>
-        <p>management apps that are overloaded with features, this project focuses on providing a clean, intuitive, and practical experience. It helps users organize their daily tasks quickly and efficiently without unnecessary complexity, making productivity easier for everyone.</p>
-        <div class="tags">
-          <span class="tag">JavaScript</span>
-          <span class="tag">HTML/CSS</span>
+      <div class="card terminal-card">
+        <div class="terminal-header">
+          <div class="window-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="window-title">todo_app.js</span>
+        </div>
+        <div class="terminal-body">
+          <h3>My To-Do List web app</h3>
+          <div class="subtitle">HTML / CSS / JS</div>
+          <p>Focused on providing a clean, intuitive experience to organize daily tasks quickly without unnecessary complexity.</p>
+          <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML/CSS</span>
             <span class="tag">
-                <a href="https://zakariaqassifi.github.io/my-To-Do-List/" target="_blank" class="btn-nav-outline">
-                    🌐 Live Demo
-                 </a>
+              <a href="https://zakariaqassifi.github.io/my-To-Do-List/" target="_blank" class="btn-live">🌐 Live Demo</a>
             </span>
+          </div>
         </div>
       </div>
 
@@ -198,65 +281,158 @@
 
   <!-- SKILLS -->
   <section id="skills" class="fade-in">
-    <div class="section-title">04 / Technical Stack</div>
+    <div class="terminal-cmd-prompt">
+      <span class="cmd-comment">// section::tech_stack</span><br>
+      <span class="cmd-symbol">&gt;</span> <span class="cmd-keyword">neofetch</span> <span class="cmd-file">--skills</span>
+    </div>
     <h2>Skills & Capabilities</h2>
 
     <div class="grid-3">
-      <div class="card">
-        <h3>Programming</h3>
-        <div class="tags">
-          <span class="tag">C</span>
-          <span class="tag">C++</span>
-          <span class="tag">Python</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">HTML / CSS</span>
+      <div class="card terminal-card">
+        <div class="terminal-header">
+          <div class="window-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="window-title">programming.json</span>
+        </div>
+        <div class="terminal-body">
+          <h3>Programming</h3>
+          <div class="tags">
+            <span class="tag">C</span>
+            <span class="tag">C++</span>
+            <span class="tag">Python</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML / CSS</span>
+          </div>
         </div>
       </div>
 
-      <div class="card">
-        <h3>Technologies</h3>
-        <div class="tags">
-          <span class="tag">Artificial Intelligence</span>
-          <span class="tag">Algorithms</span>
-          <span class="tag">OOP Paradigm</span>
+      <div class="card terminal-card">
+        <div class="terminal-header">
+          <div class="window-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="window-title">core_concepts.env</span>
+        </div>
+        <div class="terminal-body">
+          <h3>Technologies</h3>
+          <div class="tags">
+            <span class="tag">Artificial Intelligence</span>
+            <span class="tag">Algorithms</span>
+            <span class="tag">OOP Paradigm</span>
+          </div>
         </div>
       </div>
 
-      <div class="card">
-        <h3>Tools & Languages</h3>
-        <div class="tags">
-          <span class="tag">GitHub</span>
-          <span class="tag">VS Code</span>
-          <span class="tag">Canva</span>
-          <span class="tag">Arabic (Native)</span>
-          <span class="tag">English</span>
-          <span class="tag">French</span>
+      <div class="card terminal-card">
+        <div class="terminal-header">
+          <div class="window-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="window-title">tools_languages.config</span>
+        </div>
+        <div class="terminal-body">
+          <h3>Tools & Languages</h3>
+          <div class="tags">
+            <span class="tag">GitHub</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">Canva</span>
+            <span class="tag">Arabic (Native)</span>
+            <span class="tag">English</span>
+            <span class="tag">French</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- CONTACT SECTION - TERMINAL MODE -->
   <section id="contact" class="fade-in">
-    <div class="section-title">05 / Get In Touch</div>
-    <div class="contact-wrapper">
-      <div class="contact-info">
-        <h2>Let's Collaborate</h2>
-        <p>Feel free to reach out for research opportunities, projects, or technical inquiries.</p>
-        <div class="contact-details">
-          <div>Email: <a href="mailto:zakariaqassifi10@gmail.com">zakariaqassifi10@gmail.com</a></div>
-          <div>Phone: <a href="tel:+212633008210">+212 633-008210</a></div>
-          <div>GitHub: <a href="https://github.com/ZakariaQassifi" target="_blank">ZakariaQassifi</a></div>
-          <div>LinkedIn: <a href="https://www.linkedin.com/in/zakaria-qassifi-87874b286/" target="_blank">Zakaria Qassifi</a></div>
+    <div class="terminal-cmd-prompt">
+      <span class="cmd-comment">// section::contact_shell</span><br>
+      <span class="cmd-symbol">&gt;</span> <span class="cmd-keyword">connect</span> <span class="cmd-file">--user guest</span>
+    </div>
+
+    <div class="terminal-card contact-terminal">
+      <!-- Terminal Header Bar -->
+      <div class="terminal-header">
+        <div class="window-dots">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
         </div>
+        <span class="window-title">guest@zakaria_Qassifi-Zexter:~ (bash)</span>
       </div>
 
-      <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea rows="4" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn-hero-primary">Send Message</button>
-      </form>
+      <!-- Terminal Body -->
+      <div class="terminal-body contact-wrapper">
+        
+        <!-- Left Side: Terminal Info & Output -->
+        <div class="contact-info">
+          <div class="term-line">
+            <span class="term-user">guest@zakaria_Qassifi-Zexter</span>:<span class="term-path">~</span>$ <span class="term-cmd">cat contact_info.txt</span>
+          </div>
+          
+          <div class="term-output">
+            <h2 class="term-title">Let's Collaborate</h2>
+            <p class="term-desc">Feel free to reach out for research opportunities, projects, or technical inquiries.</p>
+            
+            <div class="contact-details">
+              <div><span class="term-key">Email:</span> <a href="mailto:zakariaqassifi10@gmail.com">zakariaqassifi10@gmail.com</a></div>
+              <div><span class="term-key">Phone:</span> <a href="tel:+212633008210">+212 633-008210</a></div>
+              <div><span class="term-key">GitHub:</span> <a href="https://github.com/ZakariaQassifi" target="_blank">ZakariaQassifi</a></div>
+              <div><span class="term-key">LinkedIn:</span> <a href="https://www.linkedin.com/in/zakaria-qassifi-87874b286/" target="_blank">Zakaria Qassifi</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Terminal Form Inputs -->
+        <form class="contact-form terminal-form" onsubmit="event.preventDefault(); alert('Message sent successfully to Zakaria!');">
+          
+          <div class="term-input-group">
+            <label class="term-label">
+              <span class="term-user">guest@zakaria-zexter</span>:<span class="term-path">~</span>$ <span class="term-prompt-text">enter_name</span>
+            </label>
+            <div class="term-input-wrapper">
+              <span class="term-arrow">&gt;</span>
+              <input type="text" placeholder="Your Name..." required autocomplete="off">
+            </div>
+          </div>
+
+          <div class="term-input-group">
+            <label class="term-label">
+              <span class="term-user">guest@zakaria-zexter</span>:<span class="term-path">~</span>$ <span class="term-prompt-text">enter_email</span>
+            </label>
+            <div class="term-input-wrapper">
+              <span class="term-arrow">&gt;</span>
+              <input type="email" placeholder="Your Email..." required autocomplete="off">
+            </div>
+          </div>
+
+          <div class="term-input-group">
+            <label class="term-label">
+              <span class="term-user">guest@zakaria-zexter</span>:<span class="term-path">~</span>$ <span class="term-prompt-text">write_message</span>
+            </label>
+            <div class="term-input-wrapper">
+              <span class="term-arrow">&gt;</span>
+              <textarea rows="4" placeholder="Type your message here..." required></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-terminal-submit">
+            <span class="term-cmd-exe">./send_message.sh</span>
+            <span class="blinking-cursor">_</span>
+          </button>
+
+        </form>
+
+      </div>
     </div>
   </section>
 
