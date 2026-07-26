@@ -86,7 +86,7 @@ function initParticles() {
 
 function animateParticles() {
 
-  ctx.fillStyle = "rgba(4, 13, 31, 0.3)"; 
+  ctx.fillStyle = "rgba(1, 10, 27, 0.3)"; 
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   
   particles.forEach((p) => {
