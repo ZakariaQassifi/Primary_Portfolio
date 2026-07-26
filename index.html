@@ -27,7 +27,7 @@
   <!-- NAVIGATION -->
   <header>
     <a href="#" class="logo">
-      <img src="newZQ.png" alt="Logo" class="logo-img">
+      <img src="logo/newZQ.png" alt="Logo" class="logo-img">
       <span class="logo-text">ZAKARIA<span class="highlight">.QASSIFI</span></span>
     </a>
     
@@ -54,6 +54,17 @@
         <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 16l2.5-2.5-1.42-1.41L11 14.17V4h-2v10.17l-2.08-2.08L5.5 13.5 10 18l2 2 2-2zm9-4h-2v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7z"/></svg>
         View CV
       </button>
+
+      <!-- Theme Switcher Toggle (Far Right) -->
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" class="theme-switch-input" />
+          <div class="slider round">
+            <span class="slider-icon sun-icon">☀️</span>
+            <span class="slider-icon moon-icon">🌙</span>
+          </div>
+        </label>
+      </div>
     </div>
   </header>
 
@@ -352,11 +363,11 @@
     </div>
   </section>
 
-  <!-- CONTACT SECTION - TERMINAL MODE -->
+  <!-- CONTACT SECTION - TERMINAL CONVERSATION WITH ZEXTER BOT -->
   <section id="contact" class="fade-in">
     <div class="terminal-cmd-prompt">
-      <span class="cmd-comment">// section::contact_shell</span><br>
-      <span class="cmd-symbol">&gt;</span> <span class="cmd-keyword">connect</span> <span class="cmd-file">--user guest</span>
+      <span class="cmd-comment">// section::zexter_ai_chat</span><br>
+      <span class="cmd-symbol">&gt;</span> <span class="cmd-keyword">init</span> <span class="cmd-file">--bot zexter</span>
     </div>
 
     <div class="terminal-card contact-terminal">
@@ -367,69 +378,52 @@
           <span class="dot yellow"></span>
           <span class="dot green"></span>
         </div>
-        <span class="window-title">guest@zakaria_Qassifi-Zexter:~ (bash)</span>
+        <span class="window-title">Zexter  - Chat Interface</span>
       </div>
 
-      <!-- Terminal Body -->
-      <div class="terminal-body contact-wrapper">
-        
-        <!-- Left Side: Terminal Info & Output -->
-        <div class="contact-info">
-          <div class="term-line">
-            <span class="term-user">guest@zakaria_Qassifi-Zexter</span>:<span class="term-path">~</span>$ <span class="term-cmd">cat contact_info.txt</span>
+      <!-- Terminal Body - Chat Conversation -->
+      <div class="terminal-body chat-wrapper">
+        <div id="zexter-chat" class="zexter-chat-container">
+          <!-- Chat messages will be populated here -->
+          <div class="chat-message zexter-message">
+            <span class="msg-prefix">zexter@ai</span>:<span class="msg-time">[Init]</span>
+            <div class="msg-content">
+              <span class="term-user">Hello! I'm Zexter 🤖</span><br>
+              <span class="term-desc">I'm here to help Zakaria connect with you. Feel free to ask anything!</span>
+            </div>
           </div>
-          
-          <div class="term-output">
-            <h2 class="term-title">Let's Collaborate</h2>
-            <p class="term-desc">Feel free to reach out for research opportunities, projects, or technical inquiries.</p>
-            
-            <div class="contact-details">
-              <div><span class="term-key">Email:</span> <a href="mailto:zakariaqassifi10@gmail.com">zakariaqassifi10@gmail.com</a></div>
-              <div><span class="term-key">Phone:</span> <a href="tel:+212633008210">+212 633-008210</a></div>
-              <div><span class="term-key">GitHub:</span> <a href="https://github.com/ZakariaQassifi" target="_blank">ZakariaQassifi</a></div>
-              <div><span class="term-key">LinkedIn:</span> <a href="https://www.linkedin.com/in/zakaria-qassifi-87874b286/" target="_blank">Zakaria Qassifi</a></div>
+
+          <div class="chat-message zexter-message">
+            <span class="msg-prefix">zexter@ai</span>:<span class="msg-time">[Info]</span>
+            <div class="msg-content">
+              <span class="term-desc">Available commands:</span>
+              <div style="margin-top: 0.5rem; padding-left: 1rem;">
+                <span style="color: #38bdf8;">→</span> Email: <a href="mailto:zakariaqassifi10@gmail.com" style="color: #7dcfff; text-decoration: none;">zakariaqassifi10@gmail.com</a><br>
+                <span style="color: #38bdf8;">→</span> Phone: <a href="tel:+212633008210" style="color: #7dcfff; text-decoration: none;">+212 633-008210</a><br>
+                <span style="color: #38bdf8;">→</span> GitHub: <a href="https://github.com/ZakariaQassifi" target="_blank" style="color: #7dcfff; text-decoration: none;">ZakariaQassifi</a><br>
+                <span style="color: #38bdf8;">→</span> LinkedIn: <a href="https://www.linkedin.com/in/zakaria-qassifi-87874b286/" target="_blank" style="color: #7dcfff; text-decoration: none;">Zakaria Qassifi</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Right Side: Terminal Form Inputs -->
-        <form class="contact-form terminal-form" onsubmit="event.preventDefault(); alert('Message sent successfully to Zakaria!');">
-          
-          <div class="term-input-group">
-            <label class="term-label">
-              <span class="term-user">guest@zakaria-zexter</span>:<span class="term-path">~</span>$ <span class="term-prompt-text">enter_name</span>
-            </label>
-            <div class="term-input-wrapper">
-              <span class="term-arrow">&gt;</span>
-              <input type="text" placeholder="Your Name..." required autocomplete="off">
-            </div>
+        <!-- Chat Input Area -->
+        <form class="zexter-input-form" id="zexter-form" onsubmit="handleZexterMessage(event);">
+          <div class="chat-input-wrapper">
+            <span class="term-user">you@guest</span>:<span class="msg-time">~</span>$ 
+            <input 
+              type="text" 
+              id="zexter-input" 
+              class="zexter-input" 
+              placeholder="Type your message..." 
+              autocomplete="off"
+              required
+            >
           </div>
-
-          <div class="term-input-group">
-            <label class="term-label">
-              <span class="term-user">guest@zakaria-zexter</span>:<span class="term-path">~</span>$ <span class="term-prompt-text">enter_email</span>
-            </label>
-            <div class="term-input-wrapper">
-              <span class="term-arrow">&gt;</span>
-              <input type="email" placeholder="Your Email..." required autocomplete="off">
-            </div>
-          </div>
-
-          <div class="term-input-group">
-            <label class="term-label">
-              <span class="term-user">guest@zakaria-zexter</span>:<span class="term-path">~</span>$ <span class="term-prompt-text">write_message</span>
-            </label>
-            <div class="term-input-wrapper">
-              <span class="term-arrow">&gt;</span>
-              <textarea rows="4" placeholder="Type your message here..." required></textarea>
-            </div>
-          </div>
-
-          <button type="submit" class="btn-terminal-submit">
-            <span class="term-cmd-exe">./send_message.sh</span>
+          <button type="submit" class="btn-zexter-send">
+            <span class="term-cmd-exe">send_message.sh</span>
             <span class="blinking-cursor">_</span>
           </button>
-
         </form>
 
       </div>
